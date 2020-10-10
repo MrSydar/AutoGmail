@@ -1,13 +1,11 @@
 package com.mrsydar.GUI;
 
-import javax.imageio.ImageIO;
+import com.mrsydar.GUI.custom_components.JImage;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 public class Application extends JFrame {
 
@@ -17,6 +15,7 @@ public class Application extends JFrame {
     private JTextField userTextField;
     private JPasswordField passwordField;
     private JCheckBox showPassword;
+    private JImage frontImage;
 
     public Application() {
         initVariables();
@@ -25,6 +24,10 @@ public class Application extends JFrame {
         addComponentsToContainer();
 
         this.setTitle("Auto Gmail");
+
+        URL url = getClass().getResource("/images/gmail_logo_128.png");
+        if(url != null) this.setIconImage(new ImageIcon(url).getImage());
+
         this.setBounds(10,10,370,600);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
@@ -38,13 +41,11 @@ public class Application extends JFrame {
         userTextField = new JTextField();
         passwordField = new JPasswordField();
         showPassword = new JCheckBox("Show Password");
-
         try {
-
+            frontImage = new JImage("/images/gmail_logo_128.png");
+        } catch (IOException ex){
+            System.out.println("Image load error");
         }
-        catch (IOException e){
-            System.out.println("Logo load error");
-        };
     }
 
     public void setLayoutManager() {
@@ -61,7 +62,14 @@ public class Application extends JFrame {
 
     public void addComponentsToContainer(){
         GridBagConstraints c = new GridBagConstraints();
+        c.fill = GridBagConstraints.BOTH;
 
+        c.gridwidth = 2;
+        c.gridx = 0;
+        c.gridy = 0;
+        container.add(frontImage, c);
+
+        c.gridwidth = 1;
         c.gridx = 0;
         c.gridy = 1;
         container.add(userLabel, c);

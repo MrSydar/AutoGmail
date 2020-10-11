@@ -23,7 +23,7 @@ public class Application extends JFrame {
     public JButton getTitleButton, getBodyButton, getRecipientsButton, sendButton;
     private JLabel userLabel, passwordLabel, emailSectionLabel,titleLabel, bodyLabel, recipientsLabel, logLabel;
 
-    private final ApplicationManager appManager;
+    private ApplicationManager appManager;
 
     public Application() {
         initVariables();
@@ -31,18 +31,9 @@ public class Application extends JFrame {
         setLocationAndSize();
         addComponentsToContainer();
 
-        this.setTitle("Auto Gmail");
-
         URL url = getClass().getResource("/images/gmail_logo_128.png");
         if(url != null) this.setIconImage(new ImageIcon(url).getImage());
-
-        appManager = new ApplicationManager(this);
-        this.addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                appManager.flushLogReport();
-            }
-        });
-
+        this.setTitle("Auto Gmail");
         this.setBounds(10,10,370,600);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
@@ -50,12 +41,6 @@ public class Application extends JFrame {
     }
 
     public void initVariables(){
-        try {
-            frontImage = new JImage("/images/gmail_logo_128.png");
-        } catch (IOException ex){
-            System.out.println("Image load error");
-        }
-
         container = getContentPane();
 
         fc = new JFileChooser();
@@ -64,6 +49,19 @@ public class Application extends JFrame {
         log = new JTextArea(5,20);
         log.setMargin(new Insets(5,5,5,5));
         log.setEditable(false);
+
+        appManager = new ApplicationManager(this);
+        this.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.out.println("Application closed");
+            }
+        });
+
+        try {
+            frontImage = new JImage("/images/gmail_logo_128.png");
+        } catch (IOException ex){
+            System.err.println("Image load error");
+        }
 
         userLabel = new JLabel("LOGIN ");
         passwordLabel = new JLabel("PASSWORD ");

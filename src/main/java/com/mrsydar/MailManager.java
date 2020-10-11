@@ -11,16 +11,18 @@ import java.util.Properties;
 class MailManager {
     private Session session;
     private final Properties properties;
-    private final ApplicationManager appManager;
 
-    //"smtp.gmail.com" "465"
     public MailManager(String host, String port, boolean sslEnable, ApplicationManager _appManager){
-        appManager = _appManager;
         properties = System.getProperties();
         properties.put("mail.smtp.host", host);
         properties.put("mail.smtp.port", port);
         properties.put("mail.smtp.ssl.enable", sslEnable ? "true" : "false");
         properties.put("mail.smtp.auth", "true");
+    }
+
+    public void enableSessionDebug(PrintStream ps){
+        session.setDebug(true);
+        session.setDebugOut(ps);
     }
 
     public void createSession(String login, String password){
@@ -29,8 +31,6 @@ class MailManager {
                 return new PasswordAuthentication(login, password);
             }
         });
-        session.setDebug(true);
-        session.setDebugOut(new PrintStream(new JLogger(appManager.app.log,"")));
     }
 
     public void send(String from, String to, String title, String body, boolean isHtmlMessage){
@@ -51,7 +51,7 @@ class MailManager {
 
             Transport.send(message);
         } catch (MessagingException mex) {
-            appManager.log(mex.toString());
+            System.err.println(mex.toString());
         }
     }
 }

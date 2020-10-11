@@ -1,2 +1,11 @@
-2020/10/10 23:30:58 autogmail started
-2020/10/10 23:31:18 autogmail started
+2020/10/11 20:50:30 > Selected: save_registry.REG as body file;
+2020/10/11 20:50:35 > Selected: SynKernelDiag2020-09-28_23-23-55.log as title file;
+2020/10/11 20:50:38 > User has cancelled file selection;
+2020/10/11 20:50:45 > Checking input data..
+2020/10/11 20:50:46 > Not implemented yet
+2020/10/11 20:50:46 > Input data is OK..
+2020/10/11 20:50:46 > Sending.. 
+2020/10/11 20:50:46 > Not implemented yet
+2020/10/11 20:50:46 > Done
+2020/10/11 20:50:46 > User has cancelled file selection;
+2020/10/11 20:50:49 > Application closed

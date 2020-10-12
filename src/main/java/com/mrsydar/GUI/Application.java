@@ -23,8 +23,6 @@ public class Application extends JFrame {
     public JButton getTitleButton, getBodyButton, getRecipientsButton, sendButton;
     private JLabel userLabel, passwordLabel, emailSectionLabel,titleLabel, bodyLabel, recipientsLabel, logLabel;
 
-    private ApplicationManager appManager;
-
     public Application() {
         initVariables();
         setLayoutManager();
@@ -50,7 +48,7 @@ public class Application extends JFrame {
         log.setMargin(new Insets(5,5,5,5));
         log.setEditable(false);
 
-        appManager = new ApplicationManager(this);
+        ApplicationManager appManager = new ApplicationManager(this);
         this.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 System.out.println("Application closed");

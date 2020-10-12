@@ -2,25 +2,27 @@ package com.mrsydar;
 
 import com.mrsydar.GUI.Application;
 import com.mrsydar.GUI.custom_components.JLogger;
+import org.apache.commons.io.FileUtils;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.*;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintStream;
 
 public class ApplicationManager extends Component implements ActionListener {
-    Application app;
-    MailManager mailManager;
-    File titleFile, bodyFile, recipientsFile;
-    JCheckBox showPasswordCheckBox;
-    PrintStream loggerPrintStream;
+    private final Application app;
+    private final MailManager mailManager;
+    private File titleFile, bodyFile, recipientsFile;
+    private PrintStream loggerPrintStream;
+    private String userLogin, userPassword, mailTitle, mailBody;
+    private String[] mailRecipients;
 
     public ApplicationManager(Application _app){
         app = _app;
-        mailManager = new MailManager( "smtp.gmail.com", "465", true, this);
+        mailManager = new MailManager( "smtp.gmail.com", "465", true);
 
         setupLogger();
 
@@ -57,20 +59,49 @@ public class ApplicationManager extends Component implements ActionListener {
     }
 
     private boolean checkInputData(){
-        System.out.println("Not implemented yet");
+        if(titleFile == null || bodyFile == null || recipientsFile == null){
+            System.err.println("Not every file selected");
+            return false;
+        }
+
+        try {
+            mailTitle = FileUtils.readFileToString(titleFile, "UTF-8");
+            mailBody = FileUtils.readFileToString(bodyFile, "UTF-8");
+            String mailRecipients = FileUtils.readFileToString(recipientsFile, "UTF-8");
+            this.mailRecipients = mailRecipients.split("\n");
+            //TODO: regex on split recipients
+        } catch (IOException e) {
+            System.err.println(e.toString());
+            return false;
+        }
+
+        userLogin = app.userField.getText().replaceAll(" ", "");
+        //TODO: regex on login
+        userPassword = String.valueOf(app.passwordField.getPassword()).replaceAll(" ", "");
+        //TODO: regex on password
+
+        if(userLogin.length() == 0 || userPassword.length() == 0){
+            System.err.println("Bad login or password input data");
+            return false;
+        }
+
+        System.out.println(mailTitle);
         return true;
     }
 
     private void startSending(){
-//        mailManager.createSession(login, password);
-//        mailManager.enableSessionDebug(loggerPrintStream);
-        System.out.println("Not implemented yet");
+        mailManager.createSession(userLogin, userPassword);
+        mailManager.enableSessionDebug(loggerPrintStream);
+        for(String recipient : mailRecipients) {
+            System.out.println("Sending to: " + recipient);
+            mailManager.send(userLogin, recipient, mailTitle, mailBody, false);
+        }
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == showPasswordCheckBox){
-            showPassword(showPasswordCheckBox.isSelected());
+        if(e.getSource() == app.showPasswordCheckBox){
+            showPassword(app.showPasswordCheckBox.isSelected());
         }
         else {
             if (e.getSource() == app.sendButton) {
@@ -90,7 +121,7 @@ public class ApplicationManager extends Component implements ActionListener {
                 if (returnVal == JFileChooser.APPROVE_OPTION) {
                     if (e.getSource() == app.getTitleButton) {
                         titleFile = app.fc.getSelectedFile();
-                        app.getTitleButton.setText(bodyFile.getName());
+                        app.getTitleButton.setText(titleFile.getName());
                         System.out.println("Selected: " + titleFile.getName() + " as title file;");
                     }
                     else if (e.getSource() == app.getBodyButton) {

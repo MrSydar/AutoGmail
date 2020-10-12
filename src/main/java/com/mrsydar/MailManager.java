@@ -1,7 +1,5 @@
 package com.mrsydar;
 
-import com.mrsydar.GUI.custom_components.JLogger;
-
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -12,7 +10,7 @@ class MailManager {
     private Session session;
     private final Properties properties;
 
-    public MailManager(String host, String port, boolean sslEnable, ApplicationManager _appManager){
+    public MailManager(String host, String port, boolean sslEnable){
         properties = System.getProperties();
         properties.put("mail.smtp.host", host);
         properties.put("mail.smtp.port", port);
@@ -46,7 +44,7 @@ class MailManager {
             message.setText(
                     body,
                     "utf-8",
-                    "text/" + ( isHtmlMessage ? "html" : "plain" ) + "; charset=UTF-8"
+                    ( isHtmlMessage ? "html" : "plain" )
             );
 
             Transport.send(message);

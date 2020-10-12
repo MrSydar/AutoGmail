@@ -3,11 +3,14 @@ package com.mrsydar.GUI;
 import com.mrsydar.ApplicationManager;
 import com.mrsydar.GUI.custom_components.JImage;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 
 public class Application extends JFrame {

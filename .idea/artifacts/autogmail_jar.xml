@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="autogmail:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/autogmail_jar</output-path>
+    <root id="archive" name="autogmail.jar">
+      <element id="module-output" name="autogmail" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/20.1.0/annotations-20.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

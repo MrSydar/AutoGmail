@@ -1,190 +1,190 @@
-2020/10/13 09:28:36 > Selected: subject.txt as title file;
-2020/10/13 09:29:02 > Selected: textHTML.html as body file;
-2020/10/13 09:29:39 > Selected: leads.txt as recipients file;
-2020/10/13 09:29:54 > Checking input data..
-2020/10/13 09:29:58 > Riwo Systems: Oferta pellet drzewny-opaￅﾂowy
-2020/10/13 09:29:58 > Input data is OK..
-2020/10/13 09:29:58 > Sending.. 
-2020/10/13 09:29:58 > DEBUG: setDebug: JavaMail version 1.6.2
-2020/10/13 09:29:58 > Sending to: dengrom1@gmail.com
-2020/10/13 09:29:58 > DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
-2020/10/13 09:30:03 > DEBUG SMTP: need username and password for authentication
-2020/10/13 09:30:03 > DEBUG SMTP: protocolConnect returning false, host=smtp.gmail.com, user=Den, password=<null>
-2020/10/13 09:30:03 > DEBUG SMTP: useEhlo true, useAuth true
-2020/10/13 09:30:03 > DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 465, isSSL true
-2020/10/13 09:30:03 > 220 smtp.gmail.com ESMTP 184sm3452266lfh.232 - gsmtp
-2020/10/13 09:30:04 > DEBUG SMTP: connected to host "smtp.gmail.com", port: 465
-2020/10/13 09:30:04 > EHLO DESKTOP-EH1GD0L
-2020/10/13 09:30:09 > 250-smtp.gmail.com at your service, [5.248.204.185]
-2020/10/13 09:30:09 > 250-SIZE 35882577
-2020/10/13 09:30:09 > 250-8BITMIME
-2020/10/13 09:30:09 > 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
-2020/10/13 09:30:09 > 250-ENHANCEDSTATUSCODES
-2020/10/13 09:30:09 > 250-PIPELINING
-2020/10/13 09:30:09 > 250-CHUNKING
-2020/10/13 09:30:09 > 250 SMTPUTF8
-2020/10/13 09:30:09 > DEBUG SMTP: Found extension "SIZE", arg "35882577"
-2020/10/13 09:30:09 > DEBUG SMTP: Found extension "8BITMIME", arg ""
-2020/10/13 09:30:09 > DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
-2020/10/13 09:30:09 > DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
-2020/10/13 09:30:09 > DEBUG SMTP: Found extension "PIPELINING", arg ""
-2020/10/13 09:30:09 > DEBUG SMTP: Found extension "CHUNKING", arg ""
-2020/10/13 09:30:09 > DEBUG SMTP: Found extension "SMTPUTF8", arg ""
-2020/10/13 09:30:09 > DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=dengrom1@gmail.com, password=<non-null>
-2020/10/13 09:30:09 > DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
-2020/10/13 09:30:09 > DEBUG SMTP: Using mechanism LOGIN
-2020/10/13 09:30:09 > DEBUG SMTP: AUTH LOGIN command trace suppressed
-2020/10/13 09:30:09 > DEBUG SMTP: AUTH LOGIN succeeded
-2020/10/13 09:30:09 > DEBUG SMTP: use8bit false
-2020/10/13 09:30:09 > MAIL FROM:<dengrom1@gmail.com>
-2020/10/13 09:30:09 > 250 2.1.0 OK 184sm3452266lfh.232 - gsmtp
-2020/10/13 09:30:09 > RCPT TO:<dengrom1@gmail.com>
-2020/10/13 09:30:09 > 250 2.1.5 OK 184sm3452266lfh.232 - gsmtp
-2020/10/13 09:30:09 > DEBUG SMTP: Verified Addresses
-2020/10/13 09:30:09 > DEBUG SMTP:   dengrom1@gmail.com
-2020/10/13 09:30:09 > DATA
-2020/10/13 09:30:09 > 354  Go ahead 184sm3452266lfh.232 - gsmtp
-2020/10/13 09:30:10 > Date: Tue, 13 Oct 2020 09:29:58 +0300 (EEST)
-2020/10/13 09:30:10 > From: dengrom1@gmail.com
-2020/10/13 09:30:10 > To: dengrom1@gmail.com
-2020/10/13 09:30:10 > Message-ID: <401214254.0.1602570603173@DESKTOP-EH1GD0L>
-2020/10/13 09:30:10 > Subject: =?UTF-8?Q?Riwo_Systems:_Oferta_pellet_drzewny-opa=C5=82owy?=
-2020/10/13 09:30:10 > MIME-Version: 1.0
-2020/10/13 09:30:10 > Content-Type: text/html; charset=utf-8
-2020/10/13 09:30:10 > Content-Transfer-Encoding: quoted-printable
-2020/10/13 09:30:10 > 
-2020/10/13 09:30:10 > <html>
-2020/10/13 09:30:10 >     <div style =3D "font-size: 15; font-family: 'Segoe UI', Tahoma, Geneva,=
-2020/10/13 09:30:10 >  Verdana, sans-serif; color: #211D16;">
-2020/10/13 09:30:10 >         <p>
-2020/10/13 09:30:10 >             Dzie=C5=84 dobry,=20
-2020/10/13 09:30:10 >         </p>
-2020/10/13 09:30:10 >         <p>
-2020/10/13 09:30:10 >             Oferujemy do sprzeda=C5=BCy pellet drzewny sosnowy=C2=A0A1 popi=
-2020/10/13 09:30:10 > =C3=B3=C5=82 0,5 %=C2=A0kaloryczno=C5=9B=C4=87 18 GJ,<br>
-2020/10/13 09:30:10 >             koloru kawy z mlekiem.=C2=A0Dost=C4=99pny w workach 15 kg.=20
-2020/10/13 09:30:10 >         </p>
-2020/10/13 09:30:10 >         <p>
-2020/10/13 09:30:10 >             Cena z dostaw=C4=85 - 590 z=C5=82 / ton=C2=A0netto (dotyczy: Wa=
-2020/10/13 09:30:10 > rszawa oraz inne lokacje w promieniu 150km).<br>
-2020/10/13 09:30:10 >             Cena z dostaw=C4=85 w inne miejsca mo=C5=BCe by=C4=87 inna.
-2020/10/13 09:30:10 >         </p>
-2020/10/13 09:30:10 >         <p>
-2020/10/13 09:30:10 >             Proponujemy d=C5=82ugotrwa=C5=82=C4=85 wsp=C3=B3=C5=82prac=C4=
-2020/10/13 09:30:10 > =99.
-2020/10/13 09:30:10 >             Zapraszamy do kontaktu.
-2020/10/13 09:30:10 >         </p>
-2020/10/13 09:30:10 >         <p>
-2020/10/13 09:30:10 >             Oleksandr Gromnyuk <br>
-2020/10/13 09:30:10 >             tel.: + 48 791 136=C2=A0600   =20
-2020/10/13 09:30:10 >         </p>
-2020/10/13 09:30:10 >     <div>
-2020/10/13 09:30:10 >    =20
-2020/10/13 09:30:10 >     <img src=3D"https://i.imgur.com/EBrTQjy.png" alt=3D"Riwo Systems">
-2020/10/13 09:30:10 > 
-2020/10/13 09:30:10 >     <p style =3D "font-weight: bolder; font-size: 12; font-family: 'Segoe U=
-2020/10/13 09:30:10 > I', Tahoma, Geneva, Verdana, sans-serif;">
-2020/10/13 09:30:10 >         RIWO SYSTEMS   Sp. z o.o. <br>
-2020/10/13 09:30:10 >         NIP:   7792465289 <br>
-2020/10/13 09:30:10 >         tel., Viber, WhatsApp:  +48 791 136 600 <br>
-2020/10/13 09:30:10 >         tel. +48 61 649 20 01 <br>
-2020/10/13 09:30:10 >         e-mail: riwosystems@gmail.com <br>
-2020/10/13 09:30:10 >     </p>
-2020/10/13 09:30:10 > </html>
-2020/10/13 09:30:10 > .
-2020/10/13 09:30:10 > 250 2.0.0 OK  1602570612 184sm3452266lfh.232 - gsmtp
-2020/10/13 09:30:11 > DEBUG SMTP: message successfully delivered to mail server
-2020/10/13 09:30:11 > QUIT
-2020/10/13 09:30:11 > 221 2.0.0 closing connection 184sm3452266lfh.232 - gsmtp
-2020/10/13 09:30:11 > Sending to: denhromniuk@gmail.com
-2020/10/13 09:30:11 > DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
-2020/10/13 09:30:15 > DEBUG SMTP: need username and password for authentication
-2020/10/13 09:30:15 > DEBUG SMTP: protocolConnect returning false, host=smtp.gmail.com, user=Den, password=<null>
-2020/10/13 09:30:15 > DEBUG SMTP: useEhlo true, useAuth true
-2020/10/13 09:30:15 > DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 465, isSSL true
-2020/10/13 09:30:15 > 220 smtp.gmail.com ESMTP m2sm3978924lfl.249 - gsmtp
-2020/10/13 09:30:15 > DEBUG SMTP: connected to host "smtp.gmail.com", port: 465
-2020/10/13 09:30:15 > EHLO DESKTOP-EH1GD0L
-2020/10/13 09:30:15 > 250-smtp.gmail.com at your service, [5.248.204.185]
-2020/10/13 09:30:16 > 250-SIZE 35882577
-2020/10/13 09:30:16 > 250-8BITMIME
-2020/10/13 09:30:16 > 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
-2020/10/13 09:30:16 > 250-ENHANCEDSTATUSCODES
-2020/10/13 09:30:16 > 250-PIPELINING
-2020/10/13 09:30:16 > 250-CHUNKING
-2020/10/13 09:30:16 > 250 SMTPUTF8
-2020/10/13 09:30:16 > DEBUG SMTP: Found extension "SIZE", arg "35882577"
-2020/10/13 09:30:16 > DEBUG SMTP: Found extension "8BITMIME", arg ""
-2020/10/13 09:30:16 > DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
-2020/10/13 09:30:16 > DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
-2020/10/13 09:30:16 > DEBUG SMTP: Found extension "PIPELINING", arg ""
-2020/10/13 09:30:16 > DEBUG SMTP: Found extension "CHUNKING", arg ""
-2020/10/13 09:30:16 > DEBUG SMTP: Found extension "SMTPUTF8", arg ""
-2020/10/13 09:30:16 > DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=dengrom1@gmail.com, password=<non-null>
-2020/10/13 09:30:16 > DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
-2020/10/13 09:30:16 > DEBUG SMTP: Using mechanism LOGIN
-2020/10/13 09:30:16 > DEBUG SMTP: AUTH LOGIN command trace suppressed
-2020/10/13 09:30:16 > DEBUG SMTP: AUTH LOGIN succeeded
-2020/10/13 09:30:16 > DEBUG SMTP: use8bit false
-2020/10/13 09:30:16 > MAIL FROM:<dengrom1@gmail.com>
-2020/10/13 09:30:16 > 250 2.1.0 OK m2sm3978924lfl.249 - gsmtp
-2020/10/13 09:30:16 > RCPT TO:<denhromniuk@gmail.com>
-2020/10/13 09:30:16 > 250 2.1.5 OK m2sm3978924lfl.249 - gsmtp
-2020/10/13 09:30:16 > DEBUG SMTP: Verified Addresses
-2020/10/13 09:30:16 > DEBUG SMTP:   denhromniuk@gmail.com
-2020/10/13 09:30:16 > DATA
-2020/10/13 09:30:16 > 354  Go ahead m2sm3978924lfl.249 - gsmtp
-2020/10/13 09:30:16 > Date: Tue, 13 Oct 2020 09:30:11 +0300 (EEST)
-2020/10/13 09:30:16 > From: dengrom1@gmail.com
-2020/10/13 09:30:16 > To: denhromniuk@gmail.com
-2020/10/13 09:30:16 > Message-ID: <1994637617.1.1602570615814@DESKTOP-EH1GD0L>
-2020/10/13 09:30:16 > Subject: =?UTF-8?Q?Riwo_Systems:_Oferta_pellet_drzewny-opa=C5=82owy?=
-2020/10/13 09:30:16 > MIME-Version: 1.0
-2020/10/13 09:30:16 > Content-Type: text/html; charset=utf-8
-2020/10/13 09:30:16 > Content-Transfer-Encoding: quoted-printable
-2020/10/13 09:30:16 > 
-2020/10/13 09:30:16 > <html>
-2020/10/13 09:30:16 >     <div style =3D "font-size: 15; font-family: 'Segoe UI', Tahoma, Geneva,=
-2020/10/13 09:30:16 >  Verdana, sans-serif; color: #211D16;">
-2020/10/13 09:30:16 >         <p>
-2020/10/13 09:30:16 >             Dzie=C5=84 dobry,=20
-2020/10/13 09:30:16 >         </p>
-2020/10/13 09:30:16 >         <p>
-2020/10/13 09:30:16 >             Oferujemy do sprzeda=C5=BCy pellet drzewny sosnowy=C2=A0A1 popi=
-2020/10/13 09:30:16 > =C3=B3=C5=82 0,5 %=C2=A0kaloryczno=C5=9B=C4=87 18 GJ,<br>
-2020/10/13 09:30:16 >             koloru kawy z mlekiem.=C2=A0Dost=C4=99pny w workach 15 kg.=20
-2020/10/13 09:30:16 >         </p>
-2020/10/13 09:30:16 >         <p>
-2020/10/13 09:30:16 >             Cena z dostaw=C4=85 - 590 z=C5=82 / ton=C2=A0netto (dotyczy: Wa=
-2020/10/13 09:30:16 > rszawa oraz inne lokacje w promieniu 150km).<br>
-2020/10/13 09:30:16 >             Cena z dostaw=C4=85 w inne miejsca mo=C5=BCe by=C4=87 inna.
-2020/10/13 09:30:16 >         </p>
-2020/10/13 09:30:16 >         <p>
-2020/10/13 09:30:16 >             Proponujemy d=C5=82ugotrwa=C5=82=C4=85 wsp=C3=B3=C5=82prac=C4=
-2020/10/13 09:30:16 > =99.
-2020/10/13 09:30:16 >             Zapraszamy do kontaktu.
-2020/10/13 09:30:16 >         </p>
-2020/10/13 09:30:16 >         <p>
-2020/10/13 09:30:16 >             Oleksandr Gromnyuk <br>
-2020/10/13 09:30:16 >             tel.: + 48 791 136=C2=A0600   =20
-2020/10/13 09:30:16 >         </p>
-2020/10/13 09:30:16 >     <div>
-2020/10/13 09:30:16 >    =20
-2020/10/13 09:30:16 >     <img src=3D"https://i.imgur.com/EBrTQjy.png" alt=3D"Riwo Systems">
-2020/10/13 09:30:16 > 
-2020/10/13 09:30:16 >     <p style =3D "font-weight: bolder; font-size: 12; font-family: 'Segoe U=
-2020/10/13 09:30:16 > I', Tahoma, Geneva, Verdana, sans-serif;">
-2020/10/13 09:30:16 >         RIWO SYSTEMS   Sp. z o.o. <br>
-2020/10/13 09:30:16 >         NIP:   7792465289 <br>
-2020/10/13 09:30:16 >         tel., Viber, WhatsApp:  +48 791 136 600 <br>
-2020/10/13 09:30:16 >         tel. +48 61 649 20 01 <br>
-2020/10/13 09:30:16 >         e-mail: riwosystems@gmail.com <br>
-2020/10/13 09:30:16 >     </p>
-2020/10/13 09:30:16 > </html>
-2020/10/13 09:30:16 > .
-2020/10/13 09:30:16 > 250 2.0.0 OK  1602570618 m2sm3978924lfl.249 - gsmtp
-2020/10/13 09:30:17 > DEBUG SMTP: message successfully delivered to mail server
-2020/10/13 09:30:17 > QUIT
-2020/10/13 09:30:17 > 221 2.0.0 closing connection m2sm3978924lfl.249 - gsmtp
-2020/10/13 09:30:17 > Done
-2020/10/13 09:30:17 > Application closed
+2020/10/13 15:40:47 > Selected: subject.txt as title file;
+2020/10/13 15:41:05 > Selected: textHTML.html as body file;
+2020/10/13 15:41:07 > Selected: leads.txt as recipients file;
+2020/10/13 15:41:13 > Checking input data..
+2020/10/13 15:41:14 > Riwo Systems: Oferta pellet drzewny-opaￅﾂowy
+2020/10/13 15:41:14 > Input data is OK..
+2020/10/13 15:41:14 > Sending.. 
+2020/10/13 15:41:14 > DEBUG: setDebug: JavaMail version 1.6.2
+2020/10/13 15:41:14 > Done
+2020/10/13 15:41:14 > Sending to: dengrom1@gmail.com
+2020/10/13 15:41:14 > DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+2020/10/13 15:41:19 > DEBUG SMTP: need username and password for authentication
+2020/10/13 15:41:19 > DEBUG SMTP: protocolConnect returning false, host=smtp.gmail.com, user=Den, password=<null>
+2020/10/13 15:41:19 > DEBUG SMTP: useEhlo true, useAuth true
+2020/10/13 15:41:19 > DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 465, isSSL true
+2020/10/13 15:41:19 > 220 smtp.gmail.com ESMTP c21sm1624754lfm.308 - gsmtp
+2020/10/13 15:41:19 > DEBUG SMTP: connected to host "smtp.gmail.com", port: 465
+2020/10/13 15:41:19 > EHLO DESKTOP-EH1GD0L
+2020/10/13 15:41:24 > 250-smtp.gmail.com at your service, [5.248.204.185]
+2020/10/13 15:41:24 > 250-SIZE 35882577
+2020/10/13 15:41:24 > 250-8BITMIME
+2020/10/13 15:41:24 > 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+2020/10/13 15:41:24 > 250-ENHANCEDSTATUSCODES
+2020/10/13 15:41:24 > 250-PIPELINING
+2020/10/13 15:41:24 > 250-CHUNKING
+2020/10/13 15:41:24 > 250 SMTPUTF8
+2020/10/13 15:41:24 > DEBUG SMTP: Found extension "SIZE", arg "35882577"
+2020/10/13 15:41:24 > DEBUG SMTP: Found extension "8BITMIME", arg ""
+2020/10/13 15:41:24 > DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
+2020/10/13 15:41:24 > DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+2020/10/13 15:41:24 > DEBUG SMTP: Found extension "PIPELINING", arg ""
+2020/10/13 15:41:24 > DEBUG SMTP: Found extension "CHUNKING", arg ""
+2020/10/13 15:41:24 > DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+2020/10/13 15:41:24 > DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=dengrom1@gmail.com, password=<non-null>
+2020/10/13 15:41:24 > DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+2020/10/13 15:41:24 > DEBUG SMTP: Using mechanism LOGIN
+2020/10/13 15:41:24 > DEBUG SMTP: AUTH LOGIN command trace suppressed
+2020/10/13 15:41:24 > DEBUG SMTP: AUTH LOGIN succeeded
+2020/10/13 15:41:24 > DEBUG SMTP: use8bit false
+2020/10/13 15:41:24 > MAIL FROM:<dengrom1@gmail.com>
+2020/10/13 15:41:24 > 250 2.1.0 OK c21sm1624754lfm.308 - gsmtp
+2020/10/13 15:41:24 > RCPT TO:<dengrom1@gmail.com>
+2020/10/13 15:41:24 > 250 2.1.5 OK c21sm1624754lfm.308 - gsmtp
+2020/10/13 15:41:24 > DEBUG SMTP: Verified Addresses
+2020/10/13 15:41:24 > DEBUG SMTP:   dengrom1@gmail.com
+2020/10/13 15:41:24 > DATA
+2020/10/13 15:41:24 > 354  Go ahead c21sm1624754lfm.308 - gsmtp
+2020/10/13 15:41:24 > Date: Tue, 13 Oct 2020 15:41:14 +0300 (EEST)
+2020/10/13 15:41:24 > From: dengrom1@gmail.com
+2020/10/13 15:41:24 > To: dengrom1@gmail.com
+2020/10/13 15:41:24 > Message-ID: <196738196.0.1602592879042@DESKTOP-EH1GD0L>
+2020/10/13 15:41:24 > Subject: =?UTF-8?Q?Riwo_Systems:_Oferta_pellet_drzewny-opa=C5=82owy?=
+2020/10/13 15:41:24 > MIME-Version: 1.0
+2020/10/13 15:41:24 > Content-Type: text/html; charset=utf-8
+2020/10/13 15:41:24 > Content-Transfer-Encoding: quoted-printable
+2020/10/13 15:41:24 > 
+2020/10/13 15:41:24 > <html>
+2020/10/13 15:41:24 >     <div style =3D "font-size: 15; font-family: 'Segoe UI', Tahoma, Geneva,=
+2020/10/13 15:41:24 >  Verdana, sans-serif; color: #211D16;">
+2020/10/13 15:41:24 >         <p>
+2020/10/13 15:41:24 >             Dzie=C5=84 dobry,=20
+2020/10/13 15:41:24 >         </p>
+2020/10/13 15:41:24 >         <p>
+2020/10/13 15:41:24 >             Oferujemy do sprzeda=C5=BCy pellet drzewny sosnowy=C2=A0A1 popi=
+2020/10/13 15:41:24 > =C3=B3=C5=82 0,5 %=C2=A0kaloryczno=C5=9B=C4=87 18 GJ,<br>
+2020/10/13 15:41:24 >             koloru kawy z mlekiem.=C2=A0Dost=C4=99pny w workach 15 kg.=20
+2020/10/13 15:41:24 >         </p>
+2020/10/13 15:41:24 >         <p>
+2020/10/13 15:41:24 >             Cena z dostaw=C4=85 - 590 z=C5=82 / ton=C2=A0netto (dotyczy: Wa=
+2020/10/13 15:41:24 > rszawa oraz inne lokacje w promieniu 150km).<br>
+2020/10/13 15:41:24 >             Cena z dostaw=C4=85 w inne miejsca mo=C5=BCe by=C4=87 inna.
+2020/10/13 15:41:24 >         </p>
+2020/10/13 15:41:24 >         <p>
+2020/10/13 15:41:24 >             Proponujemy d=C5=82ugotrwa=C5=82=C4=85 wsp=C3=B3=C5=82prac=C4=
+2020/10/13 15:41:24 > =99.
+2020/10/13 15:41:24 >             Zapraszamy do kontaktu.
+2020/10/13 15:41:24 >         </p>
+2020/10/13 15:41:24 >         <p>
+2020/10/13 15:41:24 >             Oleksandr Gromnyuk <br>
+2020/10/13 15:41:24 >             tel.: + 48 791 136=C2=A0600   =20
+2020/10/13 15:41:24 >         </p>
+2020/10/13 15:41:24 >     <div>
+2020/10/13 15:41:24 >    =20
+2020/10/13 15:41:24 >     <img src=3D"https://i.imgur.com/EBrTQjy.png" alt=3D"Riwo Systems">
+2020/10/13 15:41:24 > 
+2020/10/13 15:41:24 >     <p style =3D "font-weight: bolder; font-size: 12; font-family: 'Segoe U=
+2020/10/13 15:41:24 > I', Tahoma, Geneva, Verdana, sans-serif;">
+2020/10/13 15:41:24 >         RIWO SYSTEMS   Sp. z o.o. <br>
+2020/10/13 15:41:24 >         NIP:   7792465289 <br>
+2020/10/13 15:41:24 >         tel., Viber, WhatsApp:  +48 791 136 600 <br>
+2020/10/13 15:41:24 >         tel. +48 61 649 20 01 <br>
+2020/10/13 15:41:24 >         e-mail: riwosystems@gmail.com <br>
+2020/10/13 15:41:24 >     </p>
+2020/10/13 15:41:24 > </html>
+2020/10/13 15:41:24 > .
+2020/10/13 15:41:24 > 250 2.0.0 OK  1602592887 c21sm1624754lfm.308 - gsmtp
+2020/10/13 15:41:25 > DEBUG SMTP: message successfully delivered to mail server
+2020/10/13 15:41:25 > QUIT
+2020/10/13 15:41:25 > 221 2.0.0 closing connection c21sm1624754lfm.308 - gsmtp
+2020/10/13 15:41:25 > Sending to: denhromniuk@gmail.com
+2020/10/13 15:41:25 > DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+2020/10/13 15:41:29 > DEBUG SMTP: need username and password for authentication
+2020/10/13 15:41:29 > DEBUG SMTP: protocolConnect returning false, host=smtp.gmail.com, user=Den, password=<null>
+2020/10/13 15:41:29 > DEBUG SMTP: useEhlo true, useAuth true
+2020/10/13 15:41:29 > DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 465, isSSL true
+2020/10/13 15:41:29 > 220 smtp.gmail.com ESMTP y14sm3803986lfl.136 - gsmtp
+2020/10/13 15:41:30 > DEBUG SMTP: connected to host "smtp.gmail.com", port: 465
+2020/10/13 15:41:30 > EHLO DESKTOP-EH1GD0L
+2020/10/13 15:41:30 > 250-smtp.gmail.com at your service, [5.248.204.185]
+2020/10/13 15:41:30 > 250-SIZE 35882577
+2020/10/13 15:41:30 > 250-8BITMIME
+2020/10/13 15:41:30 > 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+2020/10/13 15:41:30 > 250-ENHANCEDSTATUSCODES
+2020/10/13 15:41:30 > 250-PIPELINING
+2020/10/13 15:41:30 > 250-CHUNKING
+2020/10/13 15:41:30 > 250 SMTPUTF8
+2020/10/13 15:41:30 > DEBUG SMTP: Found extension "SIZE", arg "35882577"
+2020/10/13 15:41:30 > DEBUG SMTP: Found extension "8BITMIME", arg ""
+2020/10/13 15:41:30 > DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
+2020/10/13 15:41:30 > DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+2020/10/13 15:41:30 > DEBUG SMTP: Found extension "PIPELINING", arg ""
+2020/10/13 15:41:30 > DEBUG SMTP: Found extension "CHUNKING", arg ""
+2020/10/13 15:41:30 > DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+2020/10/13 15:41:30 > DEBUG SMTP: protocolConnect login, host=smtp.gmail.com, user=dengrom1@gmail.com, password=<non-null>
+2020/10/13 15:41:30 > DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM XOAUTH2 
+2020/10/13 15:41:30 > DEBUG SMTP: Using mechanism LOGIN
+2020/10/13 15:41:30 > DEBUG SMTP: AUTH LOGIN command trace suppressed
+2020/10/13 15:41:30 > DEBUG SMTP: AUTH LOGIN succeeded
+2020/10/13 15:41:30 > DEBUG SMTP: use8bit false
+2020/10/13 15:41:30 > MAIL FROM:<dengrom1@gmail.com>
+2020/10/13 15:41:30 > 250 2.1.0 OK y14sm3803986lfl.136 - gsmtp
+2020/10/13 15:41:30 > RCPT TO:<denhromniuk@gmail.com>
+2020/10/13 15:41:30 > 250 2.1.5 OK y14sm3803986lfl.136 - gsmtp
+2020/10/13 15:41:30 > DEBUG SMTP: Verified Addresses
+2020/10/13 15:41:30 > DEBUG SMTP:   denhromniuk@gmail.com
+2020/10/13 15:41:30 > DATA
+2020/10/13 15:41:30 > 354  Go ahead y14sm3803986lfl.136 - gsmtp
+2020/10/13 15:41:30 > Date: Tue, 13 Oct 2020 15:41:25 +0300 (EEST)
+2020/10/13 15:41:30 > From: dengrom1@gmail.com
+2020/10/13 15:41:30 > To: denhromniuk@gmail.com
+2020/10/13 15:41:30 > Message-ID: <1030633308.1.1602592889988@DESKTOP-EH1GD0L>
+2020/10/13 15:41:30 > Subject: =?UTF-8?Q?Riwo_Systems:_Oferta_pellet_drzewny-opa=C5=82owy?=
+2020/10/13 15:41:30 > MIME-Version: 1.0
+2020/10/13 15:41:30 > Content-Type: text/html; charset=utf-8
+2020/10/13 15:41:30 > Content-Transfer-Encoding: quoted-printable
+2020/10/13 15:41:30 > 
+2020/10/13 15:41:30 > <html>
+2020/10/13 15:41:30 >     <div style =3D "font-size: 15; font-family: 'Segoe UI', Tahoma, Geneva,=
+2020/10/13 15:41:30 >  Verdana, sans-serif; color: #211D16;">
+2020/10/13 15:41:30 >         <p>
+2020/10/13 15:41:30 >             Dzie=C5=84 dobry,=20
+2020/10/13 15:41:30 >         </p>
+2020/10/13 15:41:30 >         <p>
+2020/10/13 15:41:30 >             Oferujemy do sprzeda=C5=BCy pellet drzewny sosnowy=C2=A0A1 popi=
+2020/10/13 15:41:30 > =C3=B3=C5=82 0,5 %=C2=A0kaloryczno=C5=9B=C4=87 18 GJ,<br>
+2020/10/13 15:41:30 >             koloru kawy z mlekiem.=C2=A0Dost=C4=99pny w workach 15 kg.=20
+2020/10/13 15:41:30 >         </p>
+2020/10/13 15:41:30 >         <p>
+2020/10/13 15:41:30 >             Cena z dostaw=C4=85 - 590 z=C5=82 / ton=C2=A0netto (dotyczy: Wa=
+2020/10/13 15:41:30 > rszawa oraz inne lokacje w promieniu 150km).<br>
+2020/10/13 15:41:30 >             Cena z dostaw=C4=85 w inne miejsca mo=C5=BCe by=C4=87 inna.
+2020/10/13 15:41:30 >         </p>
+2020/10/13 15:41:30 >         <p>
+2020/10/13 15:41:30 >             Proponujemy d=C5=82ugotrwa=C5=82=C4=85 wsp=C3=B3=C5=82prac=C4=
+2020/10/13 15:41:30 > =99.
+2020/10/13 15:41:30 >             Zapraszamy do kontaktu.
+2020/10/13 15:41:30 >         </p>
+2020/10/13 15:41:30 >         <p>
+2020/10/13 15:41:30 >             Oleksandr Gromnyuk <br>
+2020/10/13 15:41:30 >             tel.: + 48 791 136=C2=A0600   =20
+2020/10/13 15:41:30 >         </p>
+2020/10/13 15:41:30 >     <div>
+2020/10/13 15:41:30 >    =20
+2020/10/13 15:41:30 >     <img src=3D"https://i.imgur.com/EBrTQjy.png" alt=3D"Riwo Systems">
+2020/10/13 15:41:30 > 
+2020/10/13 15:41:30 >     <p style =3D "font-weight: bolder; font-size: 12; font-family: 'Segoe U=
+2020/10/13 15:41:30 > I', Tahoma, Geneva, Verdana, sans-serif;">
+2020/10/13 15:41:30 >         RIWO SYSTEMS   Sp. z o.o. <br>
+2020/10/13 15:41:30 >         NIP:   7792465289 <br>
+2020/10/13 15:41:30 >         tel., Viber, WhatsApp:  +48 791 136 600 <br>
+2020/10/13 15:41:30 >         tel. +48 61 649 20 01 <br>
+2020/10/13 15:41:30 >         e-mail: riwosystems@gmail.com <br>
+2020/10/13 15:41:30 >     </p>
+2020/10/13 15:41:30 > </html>
+2020/10/13 15:41:30 > .
+2020/10/13 15:41:30 > 250 2.0.0 OK  1602592892 y14sm3803986lfl.136 - gsmtp
+2020/10/13 15:41:31 > DEBUG SMTP: message successfully delivered to mail server
+2020/10/13 15:41:31 > QUIT
+2020/10/13 15:41:31 > 221 2.0.0 closing connection y14sm3803986lfl.136 - gsmtp
+2020/10/13 15:41:31 > Application closed

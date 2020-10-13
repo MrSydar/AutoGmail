@@ -1,12 +1,13 @@
-package com.mrsydar;
+package com.mrsydar.mailing;
 
-import javax.mail.*;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
+import com.mrsydar.ApplicationManager;
+
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
 import java.io.PrintStream;
 import java.util.Properties;
 
-class MailManager {
+public class MailManager {
     private Session session;
     private final Properties properties;
 
@@ -31,25 +32,8 @@ class MailManager {
         });
     }
 
-    public void send(String from, String to, String title, String body, boolean isHtmlMessage){
-        try {
-            MimeMessage message = new MimeMessage(session);
-
-            message.setFrom(new InternetAddress(from));
-
-            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-
-            message.setSubject(title);
-
-            message.setText(
-                    body,
-                    "utf-8",
-                    ( isHtmlMessage ? "html" : "plain" )
-            );
-
-            Transport.send(message);
-        } catch (MessagingException mex) {
-            System.err.println(mex.toString());
-        }
+    public void send(String from, String[] to, String title, String body, boolean isHtmlMessage, ApplicationManager appManager){
+        Sender sender = new Sender(from, to, title,  body, isHtmlMessage, session, appManager);
+        sender.start();
     }
 }

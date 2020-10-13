@@ -2,6 +2,7 @@ package com.mrsydar;
 
 import com.mrsydar.GUI.Application;
 import com.mrsydar.GUI.custom_components.JLogger;
+import com.mrsydar.mailing.MailManager;
 import org.apache.commons.io.FileUtils;
 
 import javax.swing.*;
@@ -44,7 +45,7 @@ public class ApplicationManager extends Component implements ActionListener {
         System.setErr(loggerPrintStream);
     }
 
-    private void enableButtons(boolean enable){
+    public void enableButtons(boolean enable){
         app.sendButton.setEnabled(enable);
         app.getTitleButton.setEnabled(enable);
         app.getBodyButton.setEnabled(enable);
@@ -93,10 +94,7 @@ public class ApplicationManager extends Component implements ActionListener {
     private void startSending(){
         mailManager.createSession(userLogin, userPassword);
         mailManager.enableSessionDebug(loggerPrintStream);
-        for(String recipient : mailRecipients) {
-            System.out.println("Sending to: " + recipient);
-            mailManager.send(userLogin, recipient, mailTitle, mailBody, app.bodyTypeButton.state);
-        }
+        mailManager.send(userLogin, mailRecipients, mailTitle, mailBody, app.bodyTypeButton.state, this);
     }
 
     @Override
@@ -111,11 +109,9 @@ public class ApplicationManager extends Component implements ActionListener {
                 if(checkInputData()) {
                     System.out.println("Input data is OK..\nSending.. ");
                     startSending();
-                    System.out.println("Done");
                 }
                 else
                     System.err.println("Sending canceled due to bad input data;");
-                enableButtons(true);
             }
             else {
                 int returnVal = app.fc.showOpenDialog(this);

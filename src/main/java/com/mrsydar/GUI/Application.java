@@ -1,16 +1,14 @@
 package com.mrsydar.GUI;
 
 import com.mrsydar.ApplicationManager;
+import com.mrsydar.GUI.custom_components.JFlipFlopButton;
 import com.mrsydar.GUI.custom_components.JImage;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URL;
 
 public class Application extends JFrame {
@@ -24,6 +22,7 @@ public class Application extends JFrame {
     public JPasswordField passwordField;
     public JCheckBox showPasswordCheckBox;
     public JButton getTitleButton, getBodyButton, getRecipientsButton, sendButton;
+    public JFlipFlopButton bodyTypeButton;
     private JLabel userLabel, passwordLabel, emailSectionLabel,titleLabel, bodyLabel, recipientsLabel, logLabel;
 
     public Application() {
@@ -89,10 +88,15 @@ public class Application extends JFrame {
         getTitleButton.addActionListener(appManager);
 
         getBodyButton = new JButton("OPEN FILE");
-        getBodyButton.setMinimumSize(new Dimension(180,30));
-        getBodyButton.setMaximumSize(new Dimension(180,30));
-        getBodyButton.setPreferredSize(new Dimension(180,30));
+        getBodyButton.setMinimumSize(new Dimension(115,30));
+        getBodyButton.setMaximumSize(new Dimension(115,30));
+        getBodyButton.setPreferredSize(new Dimension(115,30));
         getBodyButton.addActionListener(appManager);
+
+        bodyTypeButton = new JFlipFlopButton("TEXT", "HTML");
+        bodyTypeButton.setMinimumSize(new Dimension(60,30));
+        bodyTypeButton.setMaximumSize(new Dimension(60,30));
+        bodyTypeButton.setPreferredSize(new Dimension(60,30));
 
         getRecipientsButton = new JButton("OPEN FILE");
         getRecipientsButton.setMinimumSize(new Dimension(180,30));
@@ -190,6 +194,7 @@ public class Application extends JFrame {
         c.gridy = 6;
         p = new JPanel();
         p.add(getBodyButton);
+        p.add(bodyTypeButton);
         container.add(p, c);
 
         c.gridx = 1;

@@ -49,6 +49,7 @@ public class ApplicationManager extends Component implements ActionListener {
         app.getTitleButton.setEnabled(enable);
         app.getBodyButton.setEnabled(enable);
         app.getRecipientsButton.setEnabled(enable);
+        app.bodyTypeButton.setEnabled(enable);
     }
 
     private void showPassword(boolean show){
@@ -94,7 +95,7 @@ public class ApplicationManager extends Component implements ActionListener {
         mailManager.enableSessionDebug(loggerPrintStream);
         for(String recipient : mailRecipients) {
             System.out.println("Sending to: " + recipient);
-            mailManager.send(userLogin, recipient, mailTitle, mailBody, false);
+            mailManager.send(userLogin, recipient, mailTitle, mailBody, app.bodyTypeButton.state);
         }
     }
 

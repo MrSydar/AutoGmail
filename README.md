@@ -2,11 +2,12 @@
 ![autogmailempty](https://i.imgur.com/rOvi6ne.jpg)
 ## Application info:
 AutoGmail - JAVA application for automatic mailing.\
-[![Download](https://api.bintray.com/packages/icon/icon-sdk/icon-sdk/images/download.svg)](https://bintray.com/icon/icon-sdk/icon-sdk/1.0.0)  [![HitCount](http://hits.dwyl.com/MrSydar/AutoGmail.svg)](http://hits.dwyl.com/MrSydar/AutoGmail)
+[![Download](https://img.shields.io/badge/Download-1.0.0-blue.svg)]((https://github.com/MrSydar/AutoGmail/raw/master/out/artifacts/autogmail_jar/autogmail.jar))
+[![HitCount](http://hits.dwyl.com/MrSydar/AutoGmail.svg)](http://hits.dwyl.com/MrSydar/AutoGmail)
 ## Features:
 - Recipients can't see who else you sent the letter to. **This means that in the "to:" field they will see only their name**.
 - Easy intuitive design.
-- Log file register everything, so in case of bug just send it to me and I'll fix it. Don't worry, passwords are not registered :)
+- Log file register everything, so in case of bug just send it to me, and I'll fix it. Don't worry, passwords are not registered :)
 ## Manual:
 1. Provide login and password for Gmail account from which application will send emails.
 2. Select text file with title for your letter by clicking on the **OPEN FILE** button near **TITLE** label and selecting file from your computer in the popup window.

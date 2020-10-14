@@ -5,6 +5,7 @@ AutoGmail - JAVA application for automatic mailing.
 ## Features:
 - Recipients can't see who else you sent the letter to. **This means that in the "to:" field they will see only their name**.
 - Easy intuitive design.
+- Log file register everything, so in case of bug just send it to me and I'll fix it. Don't worry, passwords are not registered :)
 ## Manual:
 1. Provide login and password for Gmail account from which application will send emails.
 2. Select text file with title for your letter by clicking on the **OPEN FILE** button near **TITLE** label and selecting file from your computer in the popup window.

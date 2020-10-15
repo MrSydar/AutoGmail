@@ -3,7 +3,6 @@
 ## Application info:
 AutoGmail - JAVA application for automatic mailing.\
 [![Download](https://img.shields.io/badge/Download-1.0.0-blue.svg)](https://github.com/MrSydar/AutoGmail/raw/master/out/artifacts/autogmail_jar/autogmail.jar)
-[![HitCount](http://hits.dwyl.com/MrSydar/AutoGmail.svg)](http://hits.dwyl.com/MrSydar/AutoGmail)
 ## Features:
 - Recipients can't see who else you sent the letter to. **This means that in the "to:" field they will see only their name**.
 - Easy intuitive design.
